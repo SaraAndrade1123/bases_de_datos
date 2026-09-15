@@ -1,0 +1,1 @@
+SELECT numero_pedido, fecha_hora, codigo_sucursal, total, metodo_pago FROM pedido WHERE codigo_sucursal IN (1, 2) AND total BETWEEN 10000 AND 25000 AND (metodo_pago = 'Tarjeta' OR metodo_pago = 'Nequi') AND cedula_cliente IS NOT NULL ORDER BY codigo_sucursal, total, metodo_pago, cedula_cliente DESC;

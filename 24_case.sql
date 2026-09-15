@@ -1,0 +1,1 @@
+SELECT nombre, precio_venta, CASE WHEN precio_venta <= 4000 THEN 'Económico' WHEN precio_venta > 4000 AND precio_venta <= 7000 THEN 'Medio' WHEN precio_venta > 7000 THEN 'Premium' END AS 'Segmento' FROM producto ORDER BY precio_venta DESC;
